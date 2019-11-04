@@ -16,12 +16,16 @@ document.addEventListener("keydown", dibujarTeclado);
 document.addEventListener("mousedown", mouseClick);
 document.addEventListener("mouseup", mouseSoltar);
 document.addEventListener("mousemove", dibujarMouse);
+document.addEventListener("touchstart", touchClick);
+document.addEventListener("touchend", touchSoltar);
+document.addEventListener("touchmove", dibujarTouch);
 boton.addEventListener("click", especLineasMouse);
 
 var ancho = cuadrito.width;
 var x = ancho/2;
 var y = ancho/2;
 var dibujar = false;
+var dibujar1 = false;
 var colorcito = "black";
 var brocha = 1;
 
@@ -67,6 +71,7 @@ function dibujarTeclado(evento)
 
 function dibujarMouse(evento1)
 {
+    console.log(evento1);
     if (dibujar == true)
     {
         x = evento1.clientX;
@@ -91,3 +96,27 @@ function especLineasMouse()
     colorcito = textoColor.value;
     brocha = parseInt(texto.value);
 }
+
+function dibujarTouch(evento2)
+{
+    console.log(evento2);
+    if (dibujar1 == true)
+    {
+        x = evento2.touches[0].clientX;
+        y = evento2.touches[0].clientY;
+        dibujarLinea(colorcito, x-brocha, y-brocha, x+brocha, y+brocha, papel);
+    }
+}
+
+function touchClick()
+{
+    dibujar1 = true;
+    console.log("Touch On");
+}
+
+function touchSoltar()
+{
+    dibujar1 = false;
+    console.log("Touch Off");
+}
+
