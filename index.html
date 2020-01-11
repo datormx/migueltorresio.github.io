@@ -1,21 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Dibujando con flechas</title>
-    </head>
-    <body>
-        <canvas width="300" height="300" id="area_de_dibujo"></canvas>
-        <p>Mueve las flechas del teclado o el mouse para dibujar</p>
-        <p>
-            Con qué ancho de línea quieres dibujar con el mouse?<br>
-            <input type="text" id="texto_lineas" />
-        </p>
-        <p>
-            Color de la línea dibujada con el mouse?<br>
-            <input type="text" id="texto_color" />
-            <input type="button" value="Seleccionar!" id="botoncito" />
-        </p>
-        <script src="eventos.js"></script>
-    </body>
+<html lang="es">
+<head>
+	<title>Miguel Torres</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/countdowntime/flipclock.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	
+	<div class="bg-img1 size1 overlay1 p-b-35 p-l-15 p-r-15" style="background-image: url('images/bg01.jpg');">
+		<div class="flex-col-c p-t-160 p-b-5 respon1">
+			<div class="wrappic1">
+				<h2 class="l1-txt1 txt-center p-t-30 p-b-70">Miguel Torres</h2>
+			</div>
+			<div class="wrappic1">
+				<h3 class="l1-txt1b txt-center p-t-30 p-b-60">
+					Sitio en construcción
+				</h3>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="flex-w flex-c-m p-b-35">
+			<a href="https://twitter.com/migueltorresio" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			<a href="https://instagram.com/migueltorresio" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-instagram"></i>
+			</a>
+
+			<a href="https://linkedin.com/in/migueltorresio" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-linkedin"></i>
+			</a>
+
+			<a href="https://facebook.com/migueltorresio" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-facebook"></i>
+			</a>
+			
+			<a href="https://github.com/migueltorresio" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-github"></i>
+			</a>
+
+			<a href="https://platzi.com/@migueltorresio" target="_blank" class="size3 flex-c-m how-platzi trans-04 m-r-3 m-l-3 m-b-5">
+				<img src="images/platzi.png" class="platzi" alt="">
+				<img src="images/platziBlack.png" class="platziBlack" alt="">
+			</a>			
+
+		</div>
+	</div>	
+</body>
 </html>
