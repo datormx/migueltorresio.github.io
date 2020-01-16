@@ -517,8 +517,17 @@ Primary use:
 
   /*---------------------------------------------*/
   .respon1 {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 0px;
+  }
+
+  .respon2{
+    padding-bottom: 20px;
+    font-size: 58px;
+  }
+
+  .respon3{
+    padding-bottom: 40px;
   }
   
 }
